@@ -9,6 +9,7 @@ class AboutMe extends React.Component {
     setInterval(() => {
       i += 1
       document.getElementById("typerwriter-content").textContent = typeContent[i % 4]
+      console.log("changed")
       document.getElementById("typerwriter-content").style.animation = "typing 5s steps(25, end) infinite, blink-caret .85s step-end infinite"
     }, 5000);
   }
@@ -17,19 +18,20 @@ class AboutMe extends React.Component {
     return (
       <div id="about-me">
         <div id="about-me-container">
-
-        </div>
-        <div id="typewriter">
-          <div id="typerwriter-content"></div>
-        </div>
-        <div id="picture">
-          Picture Container
-        </div>
-        <div id="name">
-          I'm Jon
-        </div>
-        <div id="description">
-          software engineer looking to create beautiful and user-centric products
+          <div id="picture">
+            Picture Container
+          </div>
+          <div id="about-me-content">
+            <div id="typewriter">
+              <div id="typerwriter-content"></div>
+            </div>
+            <div id="name">
+              I'm Jon
+            </div>
+            <div id="description">
+              software engineer looking to create beautiful and user-centric products
+            </div>
+          </div>
         </div>
       </div>
     )

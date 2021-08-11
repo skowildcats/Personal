@@ -1,10 +1,7 @@
 #typewriter {
-  display: inline-flex;
+  width: fit-content;
   color: white;
-  position: relative;
-
-  top: 35%; left: 60%;
-  transform: translate(-50%, -50%);
+  margin: auto;
 }
 
 #typewriter div {

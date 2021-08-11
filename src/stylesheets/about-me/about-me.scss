@@ -1,3 +1,13 @@
+#about-me-container {
+  border: 1px solid white;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
 #about-me {
   background-color: black;
   color: white;
@@ -13,9 +23,5 @@
 
 #picture {
   border: 1px solid white;
-  width: 250px;
-  height: 250px;
-  
-  top: 40%; left: 20%;
-  transform: translate(-50%, -50%);
+  width: 50%
 }
