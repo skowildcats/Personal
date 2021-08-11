@@ -7,6 +7,7 @@ html, body, h1, h2, h3, p, ul, li, a, div, form, input, button, label, span{
   text-decoration: none;
   border: none;
   outline: none;
+  scroll-behavior: smooth;
 }
 
 ul, li { list-style: none; }

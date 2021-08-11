@@ -8,10 +8,10 @@ const App = () => (
     <NavBar/>
     <div id="body">
       <AboutMe />
-      <div>
+      <div id="skills">
         Skills
       </div>
-      <div>
+      <div id="projects">
         Projects
       </div>
       <div>
