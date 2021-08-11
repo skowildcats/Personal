@@ -8,6 +8,8 @@ class AboutMe extends React.Component {
     document.getElementById("typerwriter-content").style.animation = "typing 5s steps(25, end) infinite, blink-caret .85s step-end infinite"
     setInterval(() => {
       i + 1 > 3 ? i = 0: i+=1
+      document.getElementById("typerwriter-content").textContent = ""
+      document.getElementById("typerwriter-content").style.animation = "none"
       document.getElementById("typerwriter-content").textContent = typeContent[i]
       console.log("changed")
       document.getElementById("typerwriter-content").style.animation = "typing 5s steps(25, end) infinite, blink-caret .85s step-end infinite"
@@ -23,6 +25,11 @@ class AboutMe extends React.Component {
           </div>
           <div id="about-me-content"> 
             <div id="picture">
+              <div>
+                <div>
+                  Team Player
+                </div>
+              </div>
               <img id="profile-pic" src={process.env.PUBLIC_URL + "/headshot.png"} alt="headshot" />
             </div>
             <div>
