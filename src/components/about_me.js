@@ -19,17 +19,16 @@ class AboutMe extends React.Component {
       <div id="about-me">
         <div id="about-me-container">
           <div id="picture">
-            Picture Container
+            <img id="profile-pic" src={process.env.PUBLIC_URL + "/headshot.png"} alt="headshot" />
           </div>
           <div id="about-me-content">
             <div id="typewriter">
               <div id="typerwriter-content"></div>
             </div>
-            <div id="name">
-              I'm Jon
-            </div>
-            <div id="description">
-              software engineer looking to create beautiful and user-centric products
+            <div>
+              I'm Jon,
+              <br/>
+              blurp heresoftware engineer looking to create beautiful and user-centric products
             </div>
           </div>
         </div>

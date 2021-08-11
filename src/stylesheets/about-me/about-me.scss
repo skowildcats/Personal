@@ -1,29 +1,35 @@
 #about-me-container {
-  border: 1px solid white;
   position: relative;
-  width: 80%;
-  height: 80%;
+  height: 90%;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
 }
 
-#about-me {
-  background-color: black;
-  color: white;
-
-  > div:not(#typewriter){
-    font-size: 20px;
-    font-weight: bold;
-    font-family: $jost;
-    position: relative;
-    opacity: .7;
-  }
+#about-me-content > div:last-child{
+  width: 80%;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: $jost;
+  position: relative;
+  opacity: .5;
+  margin: auto;
 }
 
 #picture {
-  border: 1px solid white;
-  width: 50%
+  width: 50%;
+  min-width: 350px;
+
+  > img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid white;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -34,5 +40,18 @@
   #picture {
     height: 50%;
     width: 100%;
+
+    > img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  #typewriter {
+    margin: 1vh auto;
+
+    > div {
+      font-size: 25px;
+    }
   }
 }
