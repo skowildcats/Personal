@@ -7,8 +7,8 @@ class AboutMe extends React.Component {
     document.getElementById("typerwriter-content").textContent = typeContent[i]
     document.getElementById("typerwriter-content").style.animation = "typing 5s steps(25, end) infinite, blink-caret .85s step-end infinite"
     setInterval(() => {
-      i += 1
-      document.getElementById("typerwriter-content").textContent = typeContent[i % 4]
+      i + 1 > 3 ? i = 0: i+=1
+      document.getElementById("typerwriter-content").textContent = typeContent[i]
       console.log("changed")
       document.getElementById("typerwriter-content").style.animation = "typing 5s steps(25, end) infinite, blink-caret .85s step-end infinite"
     }, 5000);
