@@ -28,7 +28,9 @@ class AboutMe extends React.Component {
             <div>
               I'm Jon,
               <br/>
-              blurp heresoftware engineer looking to create beautiful and user-centric products
+              Software engineer looking to create beautiful and user-centric products.
+              Software engineer looking to create beautiful and user-centric products.
+              Software engineer looking to create beautiful and user-centric products.
             </div>
           </div>
         </div>
