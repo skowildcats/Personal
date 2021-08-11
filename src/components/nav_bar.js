@@ -5,10 +5,6 @@ class NavBar extends React.Component {
     return (
       <div id="nav-bar">
         <div>
-          Jonathan Chen
-        </div>
-
-        <div>
           <button>
             About
           </button>

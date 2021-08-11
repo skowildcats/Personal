@@ -1,0 +1,21 @@
+#about-me {
+  background-color: black;
+  color: white;
+
+  > div:not(#typewriter){
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $jost;
+    position: relative;
+    opacity: .7;
+  }
+}
+
+#picture {
+  border: 1px solid white;
+  width: 250px;
+  height: 250px;
+  
+  top: 40%; left: 20%;
+  transform: translate(-50%, -50%);
+}
