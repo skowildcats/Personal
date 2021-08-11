@@ -1,11 +1,15 @@
 #typewriter {
   width: fit-content;
-  color: white;
+  color: $mirage-yellow-light;
   margin: 50px auto 50px;
 }
 
-#typewriter div {
+#typewriter div { 
   -webkit-backface-visibility: hidden;
+  text-shadow: 5px 5px $mirage-dark-orange, 4.5px 4.5px $mirage-dark-orange, 4px 4px $mirage-dark-orange, 
+    3.5px 3.5px $mirage-dark-orange, 3px 3px $mirage-dark-orange, 2.5px 2.5px $mirage-dark-orange, 2px 2px $mirage-dark-orange, 
+    1.5px 1.5px $mirage-dark-orange, 1px 1px $mirage-dark-orange, .5px .5px $mirage-dark-orange;
+  letter-spacing: 2px;
   font-size: 40px;  
   font-weight: bold;
   font-family: $jost;
@@ -27,4 +31,14 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: white; }
+}
+
+@media only screen and (max-width: 900px) {
+  #typewriter {
+    margin: 1vh auto;
+
+    > div {
+      font-size: 25px;
+    }
+  }
 }

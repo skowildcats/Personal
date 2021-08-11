@@ -26,11 +26,11 @@ class AboutMe extends React.Component {
               <div id="typerwriter-content"></div>
             </div>
             <div>
-              I'm Jon,
+              <span>Hi, I'm Jon </span>
               <br/>
-              Software engineer looking to create beautiful and user-centric products.
-              Software engineer looking to create beautiful and user-centric products.
-              Software engineer looking to create beautiful and user-centric products.
+              I'm a full stack software engineer with a passion for problem solving
+              looking to make an impact through beautiful and user-centric products.
+              Learn more about my <span>skills</span> and <span>projects</span> below.
             </div>
           </div>
         </div>

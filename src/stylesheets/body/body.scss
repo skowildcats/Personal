@@ -1,7 +1,9 @@
 #body {
   position: absolute;
   width: 100%;
-  background-color: black;  
-  color: white;
-  
+  background-color: $mirage-dark;  
+
+  > div:not(:first-child) {
+    height: 300px;  
+  }
 }
