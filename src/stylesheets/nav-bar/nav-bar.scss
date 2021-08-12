@@ -3,12 +3,21 @@
   z-index: 1000;
   width: 7vw;
   height: 100vh;
-  background-color: black;
+  background-color: $mirage-yellow;
   color: white;
   transition: width 300ms ease;
 
   &:hover {
     width: 12vw;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+
+    > button {
+      // text-align: left;
+    }
   }
 }
 

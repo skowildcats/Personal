@@ -2,13 +2,19 @@
   width: 80%;
   margin: auto;
   display: flex;
+  // border: 1px solid white;
 
   > div {
-    width: 50%
+    width: 50%;
+
+    &:first-child {
+      padding-right: 5vw;
+    }
   }
 }
 
 #skills-text {
+  animation: 1.25s appear ease-in-out;
   color: $mirage-yellow-light;  
   font-size:calc(10px + 1.5vw);
   font-weight: bold;
@@ -26,6 +32,7 @@
 
     > #skills-text {
       width: 72%;
+      padding-right: 0vw;
     }
 
     > #icon-container {

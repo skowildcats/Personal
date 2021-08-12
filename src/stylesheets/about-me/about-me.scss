@@ -9,10 +9,11 @@
   display: flex;
 
   > div:first-child{
-    width: 80%;
+    width: 90%;
   }
 
   > div:last-child {
+    animation: 1.25s appear ease-in-out;
     color: $mirage-yellow-light;
     width: 80%;
     font-size:calc(10px + 1.5vw);
@@ -84,10 +85,11 @@
   }
 
   > img {
+    animation: 1.25s appear ease-in-out;
     position: relative;
     padding: 40px 0;
     z-index: 100;
-    display: block;
+    display: block; 
     margin: auto;
     width: 30vw; height: 30vw;
     max-height: 350px; max-width: 350px;

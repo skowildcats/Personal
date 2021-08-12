@@ -22,7 +22,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <nav id="nav-bar">
-        <div>
+        <div id="button-container">
           <button>
             About
           </button>
