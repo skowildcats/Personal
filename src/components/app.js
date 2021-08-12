@@ -3,6 +3,7 @@ import "../stylesheets/application.scss";
 import NavBar from "./nav_bar"
 import AboutMe from './about_me';
 import Skills from './skills';
+import LoadingPage from './loading_page';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,15 +14,13 @@ class App extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({loading: false})
-    }, 5000);
+    }, 2250);
   }
 
   render() {
     if (this.state.loading) {
       return (
-        <div>
-          Hi
-        </div>
+        <LoadingPage />
       )
     } else {
       return (
