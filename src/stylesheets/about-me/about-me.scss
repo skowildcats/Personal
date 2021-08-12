@@ -31,30 +31,32 @@
       > a {
         display: inline-block;
         font-size:calc(10px + 1.5vw);
-        // border-bottom: 4px solid $mirage-dark-orange;
+        position: relative;
         cursor: pointer;
+        z-index: 5;
 
         &::after {
+          z-index: 15;
+          position: relative;
           content: ""; 
           display: block; 
-          margin: 0 auto; 
-          padding-top: 0px;
-          width: 80%; 
-          border-bottom: 4px solid $mirage-yellow-light; 
+          margin: -2px auto;
+          width: 85%; 
+          border-bottom: 3px solid $mirage-yellow-light; 
           box-shadow: 3px 3px $mirage-contrast, 2.5px 2.5px $mirage-contrast, 2px 2px $mirage-contrast, 
           1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
         }
       }
 
       &:hover {
-        color: $mirage-dark-orange;
-        text-shadow: 3px 3px $mirage-light-orange, 2.5px 2.5px $mirage-light-orange, 2px 2px $mirage-light-orange, 
-        1.5px 1.5px $mirage-light-orange, 1px 1px $mirage-light-orange, .5px .5px $mirage-light-orange;
+        color: $mirage-light-orange;
+        text-shadow: 3px 3px $mirage-dark-orange, 2.5px 2.5px $mirage-dark-orange, 2px 2px $mirage-dark-orange, 
+        1.5px 1.5px $mirage-dark-orange, 1px 1px $mirage-dark-orange, .5px .5px $mirage-dark-orange;
 
         > a::after {
-          border-color: $mirage-dark-orange;
-          box-shadow: 3px 3px $mirage-light-orange, 2.5px 2.5px $mirage-light-orange, 2px 2px $mirage-light-orange, 
-          1.5px 1.5px $mirage-light-orange, 1px 1px $mirage-light-orange, .5px .5px $mirage-light-orange;
+          border-color: $mirage-light-orange;
+          box-shadow: 3px 3px $mirage-dark-orange, 2.5px 2.5px $mirage-dark-orange, 2px 2px $mirage-dark-orange, 
+        1.5px 1.5px $mirage-dark-orange, 1px 1px $mirage-dark-orange, .5px .5px $mirage-dark-orange;
         }
       }
     }

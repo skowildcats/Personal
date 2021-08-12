@@ -26,11 +26,11 @@ class AboutMe extends React.Component {
           </div>
           <div id="about-me-content"> 
             <div id="picture">
-              <div>
+              {/* <div>
                 <div>
                   Team Player
                 </div>
-              </div>
+              </div> */}
               <img id="profile-pic" src={process.env.PUBLIC_URL + "/headshot.png"} alt="headshot" />
             </div>
             <div>
