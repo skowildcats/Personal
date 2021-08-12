@@ -1,13 +1,23 @@
 #nav-bar {
   position: fixed;
   z-index: 1000;
-  width: 5vw;
+  width: 7vw;
   height: 100vh;
   background-color: black;
   color: white;
   transition: width 300ms ease;
 
   &:hover {
-    width: 10vw;
+    width: 12vw;
+  }
+}
+
+@media only screen and (max-width: $transition) {
+  #nav-bar {
+    transition: none;
+    height: 8vh;
+    width: 100vw;
+    bottom: 0;
+    pointer-events: none;
   }
 }

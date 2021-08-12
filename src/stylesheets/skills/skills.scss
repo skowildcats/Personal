@@ -1,5 +1,5 @@
 #skills {
-  width: 90%;
+  width: 80%;
   margin: auto;
   display: flex;
 
@@ -19,7 +19,7 @@
   1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: $transition) {
   #skills {
     flex-direction: column-reverse;
     width: 100%;
