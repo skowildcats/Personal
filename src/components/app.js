@@ -28,7 +28,7 @@ class App extends React.Component {
         <div id="app">
           <NavBar/>
           <div id="body">
-            <div id="header"></div>
+            {/* <div id="header"></div> */}
             <div id="footer"></div>
             <AboutMe />
             <Skills/>
