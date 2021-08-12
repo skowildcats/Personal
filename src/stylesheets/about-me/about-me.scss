@@ -17,7 +17,7 @@
     animation: 1.25s appear ease-in-out;
     color: $mirage-yellow-light;
     width: 80%;
-    font-size: calc(2vw + 5px);
+    font-size: calc(2vw + 3px);
     font-weight: bold;
     font-family: $hk-grotesk;
     position: relative;
@@ -32,7 +32,7 @@
     > span:not(:first-child){
       > a {
         display: inline-block;
-        font-size: calc(2vw + 5px);
+        font-size: calc(2vw + 3px);
         position: relative;
         cursor: pointer;
         z-index: 5;
@@ -77,7 +77,7 @@
     display: block; 
     margin: auto;
     width: 30vw; height: 30vw;
-    max-height: 350px; max-width: 350px;
+    max-height: 400px; max-width: 400px;
     min-height: 275px; min-width: 275px;
     border-radius: 50%;
     object-fit: cover;
@@ -91,14 +91,14 @@
     > div:last-child {
       width: 90%;
       padding-bottom: 20px;
-      font-size: calc(2vw + 10px);
+      font-size: calc(1vw + 15px);
 
       > span:first-child {
-        font-size: calc(2vw + 20px)
+        font-size: calc(1vw + 20px)
       }
 
       > span:not(:first-child) > a {
-        font-size: calc(2vw + 10px);
+        font-size: calc(1vw + 15px);
       }
     }
   }
