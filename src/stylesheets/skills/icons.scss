@@ -1,4 +1,43 @@
-#skills > svg {
-  width: 20vw; 
-  height: 20vw;
+#icon-container {
+  border: 1px solid white;
+  width: 50%;
+  height: 500px;
+
+  > svg {
+    width: 5vw; 
+    height: 5vw;
+    color: $mirage-yellow-light;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    display: inline;
+    // position: absolute;
+
+    &:first-child {
+      // transform-origin: 20% 40%;
+      // animation: 5s spin infinite linear;
+    }
+
+    // &:nth-child(2), &:nth-child(3), &:nth-child(4){
+    //   position: relative;
+    //   top: 50%; left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   // animation: 2s spin infinite linear;
+    // }
+
+    // &:nth-child(8) {
+    //   position: relative;
+    //   top: 50%; left: 50%;
+    //   transform: translate(-50%, -50%);
+    // }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

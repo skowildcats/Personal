@@ -1,0 +1,10 @@
+#skills {
+  width: 90%;
+  margin: auto;
+  border: 1px solid white;
+  display: flex;
+
+  > div {
+    width: 50%;
+  }
+}
