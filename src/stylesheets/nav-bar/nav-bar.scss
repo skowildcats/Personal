@@ -1,25 +1,13 @@
 #nav-bar {
-  z-index: 100;
-  width: 100%;
-  overflow: auto;
-  font-family: $jost;
+  position: fixed;
+  z-index: 1000;
+  width: 5vw;
+  height: 100vh;
   background-color: black;
   color: white;
-  border-bottom: 1px solid white;
+  transition: width 300ms ease;
 
-  * {
-    font-size: 18px;
-  }
-
-  > div {
-    float: right;
-    padding: 10px;
-    margin-left: 10px;
-
-    display: flex;
-    > button {
-      font-family: $jost;
-      margin: 0 10px;
-    }
+  &:hover {
+    width: 10vw;
   }
 }

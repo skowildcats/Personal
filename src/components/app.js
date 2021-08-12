@@ -4,6 +4,7 @@ import NavBar from "./nav_bar"
 import AboutMe from './about_me';
 import Skills from './skills';
 import LoadingPage from './loading_page';
+import Projects from './projects';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,13 +26,11 @@ class App extends React.Component {
     } else {
       return (
         <div id="app">
-          {/* <NavBar/> */}
+          <NavBar/>
           <div id="body">
             <AboutMe />
             <Skills/>
-            <div id="projects">
-              Projects
-            </div>
+            <Projects />
             <div>
               Contact
             </div>
