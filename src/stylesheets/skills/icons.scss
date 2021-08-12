@@ -1,29 +1,74 @@
 #icon-container {
   border: 1px solid white;
   width: 50%;
-  height: 500px;
+  height: 400px;
+  position: relative;
 
   > svg {
-    width: 5vw; 
-    height: 5vw;
+    width: 50px;   
+    height: 50px; 
     color: $mirage-yellow-light;
     border: 1px solid white;
     border-radius: 50%;
     padding: 5px;
     display: inline;
-    // position: absolute;
+    position: absolute;
+    top: 45%; left: 45%;
 
-    &:first-child {
-      // transform-origin: 20% 40%;
-      // animation: 5s spin infinite linear;
+    &:nth-child(2) {
+      animation: 5s spin infinite linear;
     }
 
-    // &:nth-child(2), &:nth-child(3), &:nth-child(4){
-    //   position: relative;
-    //   top: 50%; left: 50%;
-    //   transform: translate(-50%, -50%);
-    //   // animation: 2s spin infinite linear;
-    // }
+    &:nth-child(3) {
+      animation: 5s -1s spin infinite linear;
+    }
+
+    &:nth-child(4) {
+      animation: 5s -2s spin infinite linear;
+    }
+
+    &:nth-child(5) {
+      animation: 5s -3s spin infinite linear;
+    }
+
+    &:nth-child(6) {
+      animation: 5s -4s spin infinite linear;
+    }
+
+    &:nth-child(7) {
+      animation: 8s spin2 infinite linear;
+    }
+
+    &:nth-child(8) {
+      animation: 8s -1s spin2 infinite linear;
+    }
+
+    &:nth-child(9) {
+      animation: 8s -2s spin2 infinite linear;
+    }
+
+    &:nth-child(10) {
+      animation: 8s -3s spin2 infinite linear;
+    }
+
+    &:nth-child(11) {
+      animation: 8s -4s spin2 infinite linear;
+    }
+
+    &:nth-child(12) {
+      animation: 8s -5s spin2 infinite linear;
+    }
+
+    &:nth-child(13) {
+      animation: 8s -6s spin2 infinite linear;
+    }
+
+    &:nth-child(14) {
+      animation: 8s -7s spin2 infinite linear;
+    }
+
+
+
 
     // &:nth-child(8) {
     //   position: relative;
@@ -34,10 +79,11 @@
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg) translateX(75px) rotate(0deg)}
+  to { transform: rotate(360deg) translateX(75px) rotate(-360deg)}
+}
+
+@keyframes spin2 {
+  from { transform: rotate(0deg) translateX(150px) rotate(0deg)}
+  to { transform: rotate(360deg) translateX(150px) rotate(-360deg)}
 }
