@@ -8,7 +8,9 @@ class Skills extends React.Component {
     return (
       <div id="skills">
         <div id="skills-text">
-          Hello
+          I'm a full stack software engineer with a passion for problem solving
+          looking to make an impact through beautiful and user-centric products.
+          Learn more about my skills and projects below.
         </div>
         <div id="icon-container">
           <SiRuby />

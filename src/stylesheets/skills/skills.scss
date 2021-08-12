@@ -8,12 +8,27 @@
   }
 }
 
+#skills-text {
+  color: $mirage-yellow-light;  
+  font-size:calc(10px + 1.5vw);
+  font-weight: bold;
+  font-family: $hk-grotesk;
+  position: relative;
+  margin: auto;
+  text-shadow: 3px 3px $mirage-contrast, 2.5px 2.5px $mirage-contrast, 2px 2px $mirage-contrast, 
+  1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
+}
+
 @media only screen and (max-width: 950px) {
   #skills {
     flex-direction: column-reverse;
     width: 100%;
 
-    > div {
+    > #skills-text {
+      width: 72%;
+    }
+
+    > #icon-container {
       width: 100%;
       margin: auto;
     }

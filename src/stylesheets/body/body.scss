@@ -1,9 +1,6 @@
 #body {
   position: absolute;
-  width: 100%;
+  width: 90vw;
+  margin-left: 10vw;
   background-color: $background;
-
-  // > div:not(:first-child) {
-  //   height: 300px;  
-  // }
 }
