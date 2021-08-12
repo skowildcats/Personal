@@ -48,13 +48,13 @@
 
       &:hover {
         color: $mirage-dark-orange;
-        text-shadow: 3px 3px $mirage-yellow-light, 2.5px 2.5px $mirage-yellow-light, 2px 2px $mirage-yellow-light, 
-        1.5px 1.5px $mirage-yellow-light, 1px 1px $mirage-yellow-light, .5px .5px $mirage-yellow-light;
+        text-shadow: 3px 3px $mirage-light-orange, 2.5px 2.5px $mirage-light-orange, 2px 2px $mirage-light-orange, 
+        1.5px 1.5px $mirage-light-orange, 1px 1px $mirage-light-orange, .5px .5px $mirage-light-orange;
 
         > a::after {
           border-color: $mirage-dark-orange;
-          box-shadow: 3px 3px $mirage-yellow-light, 2.5px 2.5px $mirage-yellow-light, 2px 2px $mirage-yellow-light, 
-          1.5px 1.5px $mirage-yellow-light, 1px 1px $mirage-yellow-light, .5px .5px $mirage-yellow-light;
+          box-shadow: 3px 3px $mirage-light-orange, 2.5px 2.5px $mirage-light-orange, 2px 2px $mirage-light-orange, 
+          1.5px 1.5px $mirage-light-orange, 1px 1px $mirage-light-orange, .5px .5px $mirage-light-orange;
         }
       }
     }
