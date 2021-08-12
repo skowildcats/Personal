@@ -2,10 +2,15 @@ import React from 'react';
 
 class AboutMe extends React.Component {
   componentDidMount() {
+    document.getElementById("typerwriter-content").textContent = "A"  
+    document.getElementById("typerwriter-content").style.color = "transparent"   
+    document.getElementById("typerwriter-content").style.textShadow = "none"  
     setTimeout(() => {
       let typeContent = ["<div> Hello World! </div>", "console.log(\"Hello World!\")", "print(\"Hello World!\")", "puts \"Hello World!\""]
       let i = 0
       document.getElementById("typerwriter-content").textContent = typeContent[i]
+      document.getElementById("typerwriter-content").style.color = "#FFD580"
+      document.getElementById("typerwriter-content").style.textShadow = "5px 5px #FA8D3E , 4.5px 4.5px #FA8D3E, 4px 4px #FA8D3E , 3.5px 3.5px #FA8D3E, 3px 3px #FA8D3E , 2.5px 2.5px #FA8D3E, 2px 2px #FA8D3E , 1.5px 1.5px #FA8D3E, 1px 1px #FA8D3E , .5px .5px #FA8D3E"
       document.getElementById("typerwriter-content").style.animation = "typing 5s steps(25, end) infinite, blink-caret .85s step-end infinite"
       setInterval(() => {
         i + 1 > 3 ? i = 0: i+=1
@@ -14,7 +19,7 @@ class AboutMe extends React.Component {
         document.getElementById("typerwriter-content").textContent = typeContent[i]
         document.getElementById("typerwriter-content").style.animation = "typing 5s steps(25, end) infinite, blink-caret .85s step-end infinite"
       }, 5000);
-    }, 100)
+    }, 500)
   }
 
   render() {
