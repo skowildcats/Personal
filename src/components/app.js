@@ -28,6 +28,7 @@ class App extends React.Component {
         <div id="app">
           <NavBar/>
           <div id="body">
+            <div id="footer"></div>
             <AboutMe />
             <Skills/>
             <Projects />

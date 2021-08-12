@@ -41,9 +41,9 @@ class AboutMe extends React.Component {
             <div>
               <span>Hi, I'm Jon </span>
               <br/>
-              I'm a full stack software engineer with a passion for problem solving
-              looking to make an impact through beautiful and user-centric products.
-              Learn more about my <span><a href="#skills">skills</a></span> and <span><a href="#projects">projects</a></span> below.
+              I'm a full stack software engineer with a passion for problem solving.
+              Looking to make an impact through beautiful and user-centric products.
+              Learn about some of my <span><a href="#skills">skills</a></span> and <span><a href="#projects">projects</a></span> below.
             </div>
           </div>
         </div>

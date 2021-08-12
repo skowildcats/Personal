@@ -1,10 +1,11 @@
 #about-me-container {
   display: flexbox;
   width: 80%;
-  margin: auto;   
+  margin: auto;  
 }
 
 #about-me-content {
+  height: 75vh; 
 
   display: flex;
 
@@ -16,7 +17,7 @@
     animation: 1.25s appear ease-in-out;
     color: $mirage-yellow-light;
     width: 80%;
-    font-size:calc(10px + 1.5vw);
+    font-size: 25px;
     font-weight: bold;
     font-family: $hk-grotesk;
     position: relative;
@@ -25,13 +26,13 @@
     1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
 
     > span:first-child {
-      font-size:calc(10px + 2vw);;
+      font-size: 35px;
     }
 
     > span:not(:first-child){
       > a {
         display: inline-block;
-        font-size:calc(10px + 1.5vw);
+        font-size: 25px;
         position: relative;
         cursor: pointer;
         z-index: 5;
@@ -65,24 +66,8 @@
 }
 
 #picture {
-  > div {
-    position: absolute;
-    left: 13%;
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-color:white;
-    z-index: 51;
-    animation: 5s expand infinite;
-    text-align: center;
-
-    > div {
-      position: relative;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
+  height: fit-content;
+  margin: auto;
 
   > img {
     animation: 1.25s appear ease-in-out;

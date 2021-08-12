@@ -1,12 +1,21 @@
 #body {
   position: absolute;
-  width: 93vw;
-  margin-left: 7vw;
+  width: calc(96vw - 30px);
+  margin-left: calc(4vw + 30px);
   background-color: $background;
 }
 
 .stop-transitions * {
   transition: none !important;
+}
+
+#footer {
+  background-image: linear-gradient(transparent, $background);
+  position: fixed;
+  height: 15vh;
+  bottom: 0;
+  width: 100%;
+  z-index: 10000;
 }
 
 @media only screen and (max-width: $transition) {

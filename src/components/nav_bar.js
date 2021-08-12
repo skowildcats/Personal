@@ -24,13 +24,13 @@ class NavBar extends React.Component {
       <nav id="nav-bar">
         <div id="button-container">
           <button>
-            About
+            ABOUT
           </button>
           <button>
-            Skills 
+            SKILLS
           </button>
           <button>
-            Projects
+            PROJECTS
           </button>
         </div>
       </nav>

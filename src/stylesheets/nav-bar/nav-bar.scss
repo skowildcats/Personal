@@ -1,10 +1,13 @@
 #nav-bar {
   position: fixed;
   z-index: 1000;
-  width: 7vw;
+  width: calc(4vw + 30px);
   height: 100vh;
   background-color: $mirage-yellow;
-  color: white;
+  // box-shadow: ;
+  color: $background;
+  font: $jost;
+  box-shadow: 0 0 10px $mirage-yellow; 
   transition: width 300ms ease;
 
   &:hover {
