@@ -23,7 +23,7 @@ class NavBar extends React.Component {
     return (
       <nav id="nav-bar">
         <div id="button-container">
-          <button>
+          {/* <button>
             ABOUT
           </button>
           <button>
@@ -31,7 +31,7 @@ class NavBar extends React.Component {
           </button>
           <button>
             PROJECTS
-          </button>
+          </button> */}
         </div>
       </nav>
     )

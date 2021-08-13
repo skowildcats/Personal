@@ -3,11 +3,11 @@
   z-index: 1000;
   width: calc(4vw + 30px);
   height: 100vh;
-  background-color: $mirage-yellow;
+  background-color: $nav;
   // box-shadow: ;
-  color: $background;
+  color: $mirage-yellow-light;
   font: $jost;
-  box-shadow: 0 0 10px $mirage-yellow; 
+  box-shadow: 0 0 10px $nav; 
   transition: width 300ms ease;
 
   &:hover {
