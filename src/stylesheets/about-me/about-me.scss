@@ -98,23 +98,23 @@
     height: inherit;
 
     > div:first-child{
-      height: 50%;
+      height: 30%;
     }
 
     > div:last-child {
-      height: 45%;
+      height: 55%;
       width: 100%;
       > div {
         width: 90%;
         padding-bottom: 20px;
-        font-size: calc(1vw + 15px);
+        font-size: calc(1vw + 17px);
 
         > span:first-child {
           font-size: calc(1vw + 20px)
         }
 
         > span:not(:first-child) > a {
-          font-size: calc(1vw + 15px);
+          font-size: calc(1vw + 17px);
         }
       }
     }
@@ -124,8 +124,6 @@
     margin: auto;
 
     > img {
-      top: 50%; left: 50%;
-      transform: translate(-50%, -40%);
       padding: 0;
       width: 300px;
       height: 300px;

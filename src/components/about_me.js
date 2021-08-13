@@ -40,7 +40,7 @@ class AboutMe extends React.Component {
             </div>
             <div>
               <div id="text-container">
-                <span>Hi, I'm Jon </span>
+                <span>Hi, I'm Jon. </span>
                 <br/>
                 I'm a full stack software engineer with a passion for problem solving.
                 Looking to make an impact through beautiful and user-centric products.
