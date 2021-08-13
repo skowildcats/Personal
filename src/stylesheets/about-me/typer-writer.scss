@@ -35,11 +35,13 @@
 }
 
 @media only screen and (max-width: $transition) {
+  #typewriter > div {
+    font-size: calc(1vw + 20px);
+  }
+}
+
+@media only screen and (max-width: $smoothing) {
   #typewriter {
     margin: 20px auto 10px;
-
-    > div {
-      font-size: calc(1vw + 20px);
-    }
   }
 }

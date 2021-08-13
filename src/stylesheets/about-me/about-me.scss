@@ -84,7 +84,7 @@
   }
 }
 
-@media only screen and (max-width: $transition) {
+@media only screen and (max-width: $smoothing) {
   #about-me-content {
     flex-direction: column;
 
