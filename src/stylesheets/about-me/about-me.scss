@@ -15,56 +15,57 @@
 
   display: flex;
 
-  > div:first-child{
-    width: 90%;
-  }
-
   > div:last-child {
-    animation: 1.25s appear ease-in-out;
-    color: $mirage-yellow-light;
-    width: 80%;
-    font-size: calc(2vw + 3px);
-    font-weight: bold;
-    font-family: $hk-grotesk;
-    position: relative;
-    margin: auto;
-    text-shadow: 3px 3px $mirage-contrast, 2.5px 2.5px $mirage-contrast, 2px 2px $mirage-contrast, 
-    1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
+    display: flex;
+    align-items: center;
+    width: 50%;
 
-    > span:first-child {
-      font-size: calc(2vw + 15px);
-    }
+    > div {
+      animation: 1.25s appear ease-in-out;
+      color: $mirage-yellow-light;
+      font-size: calc(2vw + 3px);
+      font-weight: bold;
+      font-family: $hk-grotesk;
+      position: relative;
+      margin: auto;
+      text-shadow: 3px 3px $mirage-contrast, 2.5px 2.5px $mirage-contrast, 2px 2px $mirage-contrast, 
+      1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
 
-    > span:not(:first-child){
-      > a {
-        display: inline-block;
-        font-size: calc(2vw + 3px);
-        position: relative;
-        cursor: pointer;
-        z-index: 5;
-
-        &::after {
-          z-index: 15;
-          position: relative;
-          content: ""; 
-          display: block; 
-          margin: -2px auto;
-          width: 85%; 
-          border-bottom: 3px solid $mirage-yellow-light; 
-          box-shadow: 3px 3px $mirage-contrast, 2.5px 2.5px $mirage-contrast, 2px 2px $mirage-contrast, 
-          1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
-        }
+      > span:first-child {
+        font-size: calc(2vw + 15px);
       }
 
-      &:hover {
-        color: $mirage-light-orange;
-        text-shadow: 3px 3px $mirage-dark-orange, 2.5px 2.5px $mirage-dark-orange, 2px 2px $mirage-dark-orange, 
-        1.5px 1.5px $mirage-dark-orange, 1px 1px $mirage-dark-orange, .5px .5px $mirage-dark-orange;
+      > span:not(:first-child){
+        > a {
+          display: inline-block;
+          font-size: calc(2vw + 3px);
+          position: relative;
+          cursor: pointer;
+          z-index: 5;
 
-        > a::after {
-          border-color: $mirage-light-orange;
-          box-shadow: 3px 3px $mirage-dark-orange, 2.5px 2.5px $mirage-dark-orange, 2px 2px $mirage-dark-orange, 
-        1.5px 1.5px $mirage-dark-orange, 1px 1px $mirage-dark-orange, .5px .5px $mirage-dark-orange;
+          &::after {
+            z-index: 15;
+            position: relative;
+            content: ""; 
+            display: block; 
+            margin: -2px auto;
+            width: 85%; 
+            border-bottom: 3px solid $mirage-yellow-light; 
+            box-shadow: 3px 3px $mirage-contrast, 2.5px 2.5px $mirage-contrast, 2px 2px $mirage-contrast, 
+            1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
+          }
+        }
+
+        &:hover {
+          color: $mirage-light-orange;
+          text-shadow: 3px 3px $mirage-dark-orange, 2.5px 2.5px $mirage-dark-orange, 2px 2px $mirage-dark-orange, 
+          1.5px 1.5px $mirage-dark-orange, 1px 1px $mirage-dark-orange, .5px .5px $mirage-dark-orange;
+
+          > a::after {
+            border-color: $mirage-light-orange;
+            box-shadow: 3px 3px $mirage-dark-orange, 2.5px 2.5px $mirage-dark-orange, 2px 2px $mirage-dark-orange, 
+          1.5px 1.5px $mirage-dark-orange, 1px 1px $mirage-dark-orange, .5px .5px $mirage-dark-orange;
+          }
         }
       }
     }
@@ -93,18 +94,28 @@
 @media only screen and (max-width: $smoothing) {
   #about-me-content {
     flex-direction: column;
+    margin: 0;
+    height: inherit;
+
+    > div:first-child{
+      height: 50%;
+    }
 
     > div:last-child {
-      width: 90%;
-      padding-bottom: 20px;
-      font-size: calc(1vw + 15px);
-
-      > span:first-child {
-        font-size: calc(1vw + 20px)
-      }
-
-      > span:not(:first-child) > a {
+      height: 45%;
+      width: 100%;
+      > div {
+        width: 90%;
+        padding-bottom: 20px;
         font-size: calc(1vw + 15px);
+
+        > span:first-child {
+          font-size: calc(1vw + 20px)
+        }
+
+        > span:not(:first-child) > a {
+          font-size: calc(1vw + 15px);
+        }
       }
     }
   }
@@ -112,14 +123,12 @@
   #picture {
     margin: auto;
 
-    > div {
-      left: 53%;
-    }
-
     > img {
-      width: 250px;
-      height: 250px;
-      padding: 0 0 15px 0;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0;
+      width: 300px;
+      height: 300px;
     }
   }
 }
