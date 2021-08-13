@@ -1,14 +1,18 @@
 #skills {
   width: 80%;
   margin: auto;
-  display: flex;
+  // display: flex;
   // border: 1px solid white;
 
-  > div {
-    width: 50%;
+  > #skills-container {
+    display: flex;
+    
+    > div {
+      width: 50%;
 
-    &:first-child {
-      padding-right: 5vw;
+      &:first-child {
+        padding-right: 5vw;
+      }
     }
   }
 }
@@ -16,7 +20,7 @@
 #skills-text {
   animation: 1.25s appear ease-in-out;
   color: $mirage-yellow-light;  
-  font-size:calc(10px + 1.5vw);
+  font-size: calc(2vw + 3px);
   font-weight: bold;
   font-family: $hk-grotesk;
   position: relative;
@@ -27,17 +31,20 @@
 
 @media only screen and (max-width: $transition) {
   #skills {
-    flex-direction: column-reverse;
-    width: 100%;
 
-    > #skills-text {
-      width: 72%;
-      padding-right: 0vw;
-    }
+    > #skills-container {
+      flex-direction: column;
+    
+      > div {
+        width: 100%;  
+      }
 
-    > #icon-container {
-      width: 100%;
-      margin: auto;
+      > div:first-child {
+        padding-right: 0vw;
+        width: 90%;
+        margin: auto;
+        font-size: calc(1vw + 15px);
+      }
     }
   }
 }

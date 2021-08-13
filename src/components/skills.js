@@ -7,27 +7,32 @@ class Skills extends React.Component {
   render() {
     return (
       <div id="skills">
-        <div id="skills-text">
-          I have experience in a wide variety of frontend and backend languages,  
-          coupled with my experience in consultng has allowed me to leverage my 
-          problems solving skills with the technologies necessary to 
-          create elegant and user friendly products.
+        <div id="skills-header">
+          Hello
         </div>
-        <div id="icon-container">
-          <SiRuby />
-          <SiRails />
-          <SiReact />
-          <SiRedux />
-          <SiPython />
-          <SiHtml5 />
-          <SiCss3 />
-          <SiPostgresql />
-          <SiJavascript />
-          <SiJquery />
-          <SiMongodb />
-          <SiNpm />
-          <SiGithub />
-          <SiNodeDotJs />
+        <div id="skills-container">
+          <div id="skills-text">
+            I have experience in a wide variety of frontend and backend languages,  
+            coupled with my experience in consultng has allowed me to leverage my 
+            problems solving skills with the technologies necessary to 
+            create elegant and user friendly products.
+          </div>
+          <div id="icon-container">
+            <SiRuby />
+            <SiRails />
+            <SiReact />
+            <SiRedux />
+            <SiPython />
+            <SiHtml5 />
+            <SiCss3 />
+            <SiPostgresql />
+            <SiJavascript />
+            <SiJquery />
+            <SiMongodb />
+            <SiNpm />
+            <SiGithub />
+            <SiNodeDotJs />
+          </div>
         </div>
       </div>
     )

@@ -1,11 +1,17 @@
+#about-me {
+  height: 95vh;
+}
+
 #about-me-container {
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
   width: 80%;
+  height: inherit;
   margin: auto;  
 }
 
 #about-me-content {
-  height: 75vh; 
+  margin: auto;
 
   display: flex;
 
