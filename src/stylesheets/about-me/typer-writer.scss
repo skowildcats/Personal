@@ -10,7 +10,6 @@
   text-shadow: 5px 5px $mirage-dark-orange, 4.5px 4.5px $mirage-dark-orange, 4px 4px $mirage-dark-orange, 
     3.5px 3.5px $mirage-dark-orange, 3px 3px $mirage-dark-orange, 2.5px 2.5px $mirage-dark-orange, 2px 2px $mirage-dark-orange, 
     1.5px 1.5px $mirage-dark-orange, 1px 1px $mirage-dark-orange, .5px .5px $mirage-dark-orange;
-  letter-spacing: 2px;
   font-size: calc(3vw + 20px);  
   font-weight: bold;
   font-family: $jost;
@@ -43,5 +42,11 @@
 @media only screen and (max-width: $smoothing) {
   #typewriter {
     margin: 20px auto 0;
+  }
+}
+
+@media only screen and (max-width: $small-width) {
+  #typewriter > div {
+    font-size: calc(1vw + 15px);
   }
 }

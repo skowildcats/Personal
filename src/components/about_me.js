@@ -2,7 +2,7 @@ import React from 'react';
 
 class AboutMe extends React.Component {
   componentDidMount() {
-    document.getElementById("typerwriter-content").textContent = "A"  
+    document.getElementById("typerwriter-content").textContent = "<div> Hello World! </div>"  
     document.getElementById("typerwriter-content").style.color = "transparent"   
     document.getElementById("typerwriter-content").style.textShadow = "none"  
     setTimeout(() => {

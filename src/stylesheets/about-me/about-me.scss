@@ -131,6 +131,16 @@
   }
 }
 
+@media only screen and (max-height: $small-height) {
+  #picture {
+    > img {
+      width: 30vh;
+      height: 30vh;
+      min-width: 0; min-height: 0;
+    }
+  }
+}
+
 @keyframes expand {
   0% { transform: scale(1) }
   50% { transform: scale(1.1) }
