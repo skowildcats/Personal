@@ -44,7 +44,7 @@ class AboutMe extends React.Component {
                 <br/>
                 I'm a full stack software engineer with a passion for problem solving.
                 Looking to make an impact through beautiful and user-centric products.
-                Learn about some of my <span><a href="#skills">skills</a></span> and <span><a href="#projects">projects</a></span> below.
+                Learn about some of my <span><a href="#skills-header">skills</a></span> and <span><a href="#projects">projects</a></span> below.
               </div>
             </div>
           </div>
