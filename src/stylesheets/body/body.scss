@@ -3,7 +3,16 @@
   width: calc(96vw - 30px);
   margin-left: calc(4vw + 30px);
   background-color: $background;
+
+  &::-webkit-scrollbar {
+  display: none;
+  }
+
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
 }
+
+
 
 .stop-transitions * {
   transition: none !important;
