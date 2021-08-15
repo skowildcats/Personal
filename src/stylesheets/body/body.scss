@@ -3,13 +3,14 @@
   width: calc(96vw - 30px);
   margin-left: calc(4vw + 30px);
   background-color: $background;
+  overflow-x: hidden;
 
-  &::-webkit-scrollbar {
-  display: none;
-  }
+  // &::-webkit-scrollbar {
+  // display: none;
+  // }
 
-  -ms-overflow-style: none;  
-  scrollbar-width: none; 
+  // -ms-overflow-style: none;  
+  // scrollbar-width: none; 
 }
 
 
