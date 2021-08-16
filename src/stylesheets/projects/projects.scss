@@ -3,8 +3,6 @@
   margin: auto;
 
   > div {
-    padding-top: 7vh;
-    height: 93vh;
     display: flex;
     flex-direction: column;
 
@@ -18,7 +16,6 @@
 
 #img-container {
   margin-top: 30px;
-  max-width: 90%;
   height: fit-content;
   width: fit-content;
   margin-left: auto; margin-right: auto;
@@ -26,38 +23,61 @@
   > img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
     // object-fit: cover;
   }
+}
+
+#description-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 #projects-header {
   font-family: $hk-grotesk;
   font-weight: bold;
   color: $mirage-yellow-light;
-  font-size: calc(3vw + 10px); 
-  text-shadow: 3px 3px $mirage-contrast, 2.5px 2.5px $mirage-contrast, 2px 2px $mirage-contrast, 
-  1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
-  cursor: default;
-  width: fit-content;
+  font-size: 20px; 
+  width: 50%;
+  // text-shadow: 3px 3px $mirage-contrast, 2.5px 2.5px $mirage-contrast, 2px 2px $mirage-contrast, 
+  // 1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
+  // cursor: default;
+  // width: fit-content;
 
-  &::after {
-    z-index: 15;
-    position: relative;
-    content: ""; 
-    display: block; 
-    margin: -2px auto;
-    width: 85%; 
-    border-bottom: 3px solid $mirage-yellow-light; 
-    box-shadow: 3px 3px $mirage-contrast, 2.5px 2.5px $mirage-contrast, 2px 2px $mirage-contrast, 
-    1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
+  // &::after {
+  //   z-index: 15;
+  //   position: relative;
+  //   content: ""; 
+  //   display: block; 
+  //   margin: -2px auto;
+  //   width: 85%; 
+  //   border-bottom: 3px solid $mirage-yellow-light; 
+  //   box-shadow: 3px 3px $mirage-contrast, 2.5px 2.5px $mirage-contrast, 2px 2px $mirage-contrast, 
+  //   1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
+  // }
+
+  > div {
+  }
+}
+
+#technologies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  width: 50%;
+  height: 10vh;
+  font-family: $hk-grotesk;
+  margin-right: auto;
+
+  > div {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 30px;
+    background-color: $mirage-yellow-light;
   }
 }
 
 @media only screen and (max-width: $transition) {
-}
-
-@media only screen and (max-width: $transition) {
-  #projects-header {
-    margin: auto;
-  }
 }

@@ -5,41 +5,57 @@ class Projects extends React.Component {
     return (
       <div id="projects">
         <div id="comfortbnb">
-          <div id="projects-header">
-            ComfortBnb
-          </div>
           <div id="comfortbnb-container">
             <div id="img-container">
               <img id="profile-pic" src={process.env.PUBLIC_URL + "/comfortbnb.png"} alt="headshot" />
             </div>
-            <div>
-              Content
+            <div id="description-container">
+              <div id="projects-header">
+                ComfortBnb
+                <div>
+                  Full Stack Clone of AirBnB with Google Maps API Integration and CRUD functionalities
+                </div>
+              </div>
+              <div id="technologies">
+                <div>
+                  React/Redux
+                </div>
+                <div>
+                  Ruby on Rails
+                </div>
+                <div>
+                  PostgreSQL
+                </div>
+                <div>
+                  Google Maps API
+                </div>
+              </div>
+            </div>
+          <div>
             </div>
           </div>
         </div>
         <div id="moneta">
-          <div id="projects-header">
-            Moneta
-          </div>
           <div id="moneta-container">
             <div id="img-container">
               <img id="profile-pic" src={process.env.PUBLIC_URL + "/moneta.png"} alt="headshot" />
             </div>
             <div>
-              Content
+              <div id="projects-header">
+                Moneta
+              </div>
             </div>
           </div>
         </div>
         <div id="wabbit">
-          <div id="projects-header">
-            Wabbit
-          </div>
           <div id="wabbit-container">
             <div id="img-container">
               <img id="profile-pic" src={process.env.PUBLIC_URL + "/wabbit.png"} alt="headshot" />
             </div>
             <div>
-              Content
+              <div id="projects-header">
+                Wabbit
+              </div>
             </div>
           </div>
         </div>
