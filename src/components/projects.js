@@ -18,9 +18,9 @@ class Projects extends React.Component {
                 <div>
                   Full Stack Clone of AirBnB
                 </div>
-                <div id="links">
-                  <a>Github</a>
-                  <a>Live</a>
+                <div id="full-links">
+                  <a href="https://github.com/skowildcats/ComfortBnB" target="_blank">Github Repo</a>
+                  <a href="https://comfortbnb.herokuapp.com/?#/" target="_blank">Live Link</a>
                 </div>
               </div>
               <div id="technologies">
@@ -36,6 +36,10 @@ class Projects extends React.Component {
                 <div>
                   Google Maps API
                 </div>
+              </div>
+              <div id="transition-links">
+                  <a href="https://github.com/skowildcats/ComfortBnB" target="_blank">Github Repo</a>
+                  <a href="https://comfortbnb.herokuapp.com/?#/" target="_blank">Live Link</a>
               </div>
             </div>
           <div>
@@ -53,9 +57,9 @@ class Projects extends React.Component {
                 <div>
                   Single Page Interactive Stock Market Demo
                 </div>
-                <div id="links">
-                  <a>Github</a>
-                  <a>Live</a>
+                <div id="full-links">
+                  <a href="https://github.com/skowildcats/Moneta" target="_blank">Github Repo</a>
+                  <a href="https://skowildcats.github.io/Moneta/" target="_blank">Live Link</a>
                 </div>
               </div>
               <div id="technologies">
@@ -83,9 +87,9 @@ class Projects extends React.Component {
                 <div>
                   A data-driven task organization app
                 </div>
-                <div id="links">
-                  <a>Github</a>
-                  <a>Live</a>
+                <div id="full-links">
+                  <a href="https://github.com/skowildcats/Wabbit" target="_blank">Github Repo</a>
+                  <a href="https://wabbitask.herokuapp.com/#/" target="_blank">Live Link</a>
                 </div>
               </div>
               <div id="technologies">

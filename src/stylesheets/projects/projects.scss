@@ -2,7 +2,7 @@
   width: 80%;
   margin: auto;
   padding-top: 3vh;
-  padding-bottom: 2vh;
+  padding-bottom: 5vh;
 
   > div {
     display: flex;
@@ -63,7 +63,7 @@
   font-weight: bold;
   color: $mirage-yellow-light;
   font-size: calc(2vw + 5px); 
-  width: 40%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   text-shadow:
@@ -76,10 +76,11 @@
   }
 }
 
-#links {
+#full-links {
+  display: flex;
 
   > a {
-    font-size: calc(1vw + 3px);
+    font-size: calc(1vw + 1px);
     margin-right: 10px;
     width: fit-content;
     display: block;
@@ -92,16 +93,20 @@
       margin: -2px auto;
       width: 100%; 
       border-bottom: 3px solid $mirage-yellow-light; 
-      box-shadow: 3px 3px $mirage-contrast, 2.5px 2.5px $mirage-contrast, 2px 2px $mirage-contrast, 
-      1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
+      box-shadow: 1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
     }
   }
+}
+
+#transition-links {
+  display: none;
 }
 
 #technologies {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+  width: 40%;
   margin-top: auto; margin-bottom: auto;
   font-family: $hk-grotesk;
 
@@ -111,7 +116,8 @@
     font-size: calc(1vw + 3px); 
     font-weight: bold;
     padding: calc(.5vw + 1px);
-    margin-left: 5px; margin-bottom: 4px;
+    margin-left: 5px; 
+    margin-top: auto; margin-bottom: auto;
     border-radius: 30px;
     background-color: $background-dark;
     color: $mirage-yellow-light;
@@ -128,7 +134,12 @@
     margin: auto;
   }
 
+  #full-links {
+    display: none;
+  }
+
   #technologies {
+    display: none;
     width: 50%;
   }
 
