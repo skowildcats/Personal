@@ -1,11 +1,10 @@
 #skills {
   width: 80%;
-  padding-top: 7vh;
+  padding-top: 7vh; padding-bottom: 7vh;
   margin: auto;
-  height: 93vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
 
   > #skills-container {
     height: inherit;
@@ -64,7 +63,8 @@
 
 @media only screen and (max-width: $transition) {
   #skills {
-    height: 88vh;
+    padding-top: 2vh;
+    height: 90vh;
     > #skills-container {
       flex-direction: column-reverse;
     
