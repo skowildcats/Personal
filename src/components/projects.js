@@ -18,6 +18,10 @@ class Projects extends React.Component {
                 <div>
                   Full Stack Clone of AirBnB
                 </div>
+                <div id="links">
+                  <a>Github</a>
+                  <a>Live</a>
+                </div>
               </div>
               <div id="technologies">
                 <div>
@@ -49,6 +53,10 @@ class Projects extends React.Component {
                 <div>
                   Single Page Interactive Stock Market Demo
                 </div>
+                <div id="links">
+                  <a>Github</a>
+                  <a>Live</a>
+                </div>
               </div>
               <div id="technologies">
                 <div>
@@ -74,6 +82,10 @@ class Projects extends React.Component {
                 Wabbit
                 <div>
                   A data-driven task organization app
+                </div>
+                <div id="links">
+                  <a>Github</a>
+                  <a>Live</a>
                 </div>
               </div>
               <div id="technologies">
