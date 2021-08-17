@@ -16,7 +16,7 @@ class Projects extends React.Component {
               <div id="projects-header">
                 ComfortBnb
                 <div>
-                  Full Stack Clone of AirBnB with Google Maps API Integration and CRUD functionalities
+                  Full Stack Clone of AirBnB
                 </div>
               </div>
               <div id="technologies">

@@ -1,7 +1,7 @@
 #typewriter {
   color: $mirage-yellow-light;
   width: fit-content;
-  margin: 50px auto 0;
+  margin: 2vh auto;
 }
 
 #typewriter div { 
@@ -36,12 +36,6 @@
 @media only screen and (max-width: $transition) {
   #typewriter > div {
     font-size: calc(1vw + 20px);
-  }
-}
-
-@media only screen and (max-width: $smoothing) {
-  #typewriter {
-    margin: 20px auto 0;
   }
 }
 

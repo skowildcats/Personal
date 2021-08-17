@@ -7,11 +7,11 @@
   flex-direction: column;
   width: 80%;
   margin: auto;  
+  padding-bottom: 2vh;
 }
 
 #about-me-content {
   margin: auto;
-  padding-top: 5vh;
   display: flex;
 
   > div:last-child {
@@ -78,7 +78,6 @@
   > img {
     animation: 1.25s appear ease-in-out;
     position: relative;
-    padding: 40px 0;
     z-index: 100;
     display: block; 
     margin: auto;
@@ -93,20 +92,13 @@
 @media only screen and (max-width: $smoothing) {
   #about-me-content {
     flex-direction: column;
-    margin: 0;
     height: inherit;
-
-    > div:first-child{
-      height: 30%;
-    }
 
     > div:last-child {
       padding-top: 5vh;
-      height: 55%;
       width: 100%;
       > div {
         width: 90%;
-        padding-bottom: 20px;
         font-size: calc(1vw + 17px);
 
         > span:first-child {
@@ -128,12 +120,6 @@
       width: 300px;
       height: 300px;
     }
-  }
-}
-
-@media only screen and (max-width: $transition) {
-  #about-me {
-    height: 95vh;
   }
 }
 

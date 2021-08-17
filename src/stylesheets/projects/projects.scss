@@ -1,6 +1,8 @@
 #projects {
   width: 80%;
   margin: auto;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
 
   > div {
     display: flex;
@@ -46,7 +48,6 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-    // object-fit: cover;
   }
 }
 
@@ -92,7 +93,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  width: 40%;
   height: 10vh;
   margin-top: auto; margin-bottom: auto;
   font-family: $hk-grotesk;
@@ -111,15 +111,15 @@
 }
 
 @media only screen and (max-width: $transition) {
-  // #projects-header {
-  //   font-size: 15px;
+  #projects {
+    padding-bottom: calc(2vh + 40px);
+  }
 
-  //   > div {
-  //     font-size: 12px;
-  //   }
-  // }
+  #project-header {
+    margin: auto;
+  }
 
   #technologies {
-    width: 70%;
+    width: 50%;
   }
 }
