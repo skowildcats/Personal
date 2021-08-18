@@ -73,6 +73,10 @@ class Projects extends React.Component {
                   Chart.js
                 </div>
               </div>
+              <div id="transition-links">
+                <a href="https://github.com/skowildcats/Moneta" target="_blank">Github Repo</a>
+                <a href="https://skowildcats.github.io/Moneta/" target="_blank">Live Link</a>
+              </div>
             </div>
           </div>
         </div>
@@ -105,6 +109,10 @@ class Projects extends React.Component {
                 <div>
                   Node.js
                 </div>
+              </div>
+              <div id="transition-links">
+                <a href="https://github.com/skowildcats/Wabbit" target="_blank">Github Repo</a>
+                <a href="https://wabbitask.herokuapp.com/#/" target="_blank">Live Link</a>
               </div>
             </div>
           </div>
