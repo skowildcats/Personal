@@ -11,3 +11,12 @@ html, body, h1, h2, h3, p, ul, li, a, div, form, input, button, label, span{
 }
 
 ul, li { list-style: none; }
+
+html{
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
