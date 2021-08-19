@@ -10,7 +10,7 @@ class Projects extends React.Component {
         <div id="comfortbnb">
           <div id="comfortbnb-container">
             <div id="img-container">
-              <img id="profile-pic" src={process.env.PUBLIC_URL + "/comfortbnb.png"} alt="headshot" />
+              <img id="profile-pic" src={process.env.PUBLIC_URL + "/comfortbnb.png"} alt="comfortbnb" />
             </div>
             <div id="description-container">
               <div id="projects-header">
@@ -49,7 +49,7 @@ class Projects extends React.Component {
         <div id="moneta">
           <div id="moneta-container">
             <div id="img-container">
-              <img id="profile-pic" src={process.env.PUBLIC_URL + "/moneta.png"} alt="headshot" />
+              <img id="profile-pic" src={process.env.PUBLIC_URL + "/moneta.png"} alt="moneta" />
             </div>
             <div id="description-container">
               <div id="projects-header">
@@ -83,7 +83,7 @@ class Projects extends React.Component {
         <div id="wabbit">
           <div id="wabbit-container">
             <div id="img-container">
-              <img id="profile-pic" src={process.env.PUBLIC_URL + "/wabbit.png"} alt="headshot" />
+              <img id="profile-pic" src={process.env.PUBLIC_URL + "/wabbit.png"} alt="wabbit" />
             </div>
             <div id="description-container">
               <div id="projects-header">

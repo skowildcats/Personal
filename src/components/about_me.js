@@ -1,5 +1,6 @@
 import React from 'react';
 import { SiLinkedin, SiAngellist, SiGithub} from 'react-icons/si'
+import headshot from '../assets/headshot.png'
 
 class AboutMe extends React.Component {
   componentDidMount() {
@@ -32,7 +33,7 @@ class AboutMe extends React.Component {
           </div>
           <div id="about-me-content"> 
             <div id="picture">
-              <img id="profile-pic" src={process.env.PUBLIC_URL + "/headshot.png"} alt="headshot" />
+              <img id="profile-pic" src={headshot} alt="headshot" />
               <div>
                 <a href="https://github.com/skowildcats" target="_blank">
                   <SiGithub />
