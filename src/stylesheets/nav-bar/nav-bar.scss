@@ -20,11 +20,10 @@
   > div {
     display: flex;
     flex-direction: column;
-    height: fit-content;
     height: 100%;
     
 
-    > a:not(:last-child){
+    > a:not(:last-child, #transition-resume) {
       display: flex;
       width: 100%;
       margin-left: auto; margin-right: auto;
@@ -56,6 +55,10 @@
   }
 }
 
+#transition-resume {
+  display: none;
+}
+
 #resume {
   margin-top: auto;
   margin-left: auto; margin-right: auto;
@@ -70,11 +73,56 @@
 }
 
 @media only screen and (max-width: $transition) {
+  #resume {
+    display: none;
+  }
+
   #nav-bar {
     transition: none;
     height: 40px;
     width: 100vw;
     bottom: 0;
-    pointer-events: none;
+
+    > div {
+      width: 75%;
+      margin: auto;
+      flex-direction: row;
+      padding: 0;
+
+      > a:not(:last-child, #transition-resume) {
+        width: 100%;
+        height: 100%;
+
+        > svg {
+          margin: auto;
+        }
+      }
+    }
+
+    &:hover {
+      width: 100vw;
+      #icon-text {
+        display: none;
+      }
+    }
+  }
+
+
+  #transition-resume {
+    display: flex;
+    width: 100%;
+    margin-left: auto; margin-right: auto;
+
+    > svg {
+      width: calc(2vw + 15px);
+      height: calc(2vw + 15px);
+      margin: auto;
+      color: $background;
+      width: 50%;
+    }
+
+    &:hover {
+      background-color: $mirage-yellow;
+    }
   }
 }

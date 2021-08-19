@@ -2,6 +2,7 @@ import React from 'react';
 import { BiHomeAlt } from 'react-icons/bi'
 import { FiTool } from 'react-icons/fi'
 import { AiOutlineProject } from 'react-icons/ai'
+import { BsFileText } from 'react-icons/bs'
 
 class NavBar extends React.Component {
   componentDidMount() {
@@ -43,6 +44,9 @@ class NavBar extends React.Component {
             <div id="icon-text">
               Projects
             </div>
+          </a>
+          <a id="transition-resume" href={process.env.PUBLIC_URL + "/Jonathan_Chen_Resume.pdf"} target="_blank">
+            <BsFileText />
           </a>
           <a id="resume" href={process.env.PUBLIC_URL + "/Jonathan_Chen_Resume.pdf"} target="_blank">
             <img id="resume-photo" src={process.env.PUBLIC_URL + "/Jonathan_Chen_Resume.png"} alt="resume">
