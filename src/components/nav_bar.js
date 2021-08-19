@@ -1,4 +1,8 @@
 import React from 'react';
+import { BiHomeAlt } from 'react-icons/bi'
+import { FiTool } from 'react-icons/fi'
+import { AiOutlineProject } from 'react-icons/ai'
+import { BsFileText } from 'react-icons/bs'
 
 class NavBar extends React.Component {
   componentDidMount() {
@@ -23,15 +27,10 @@ class NavBar extends React.Component {
     return (
       <nav id="nav-bar">
         <div id="button-container">
-          {/* <button>
-            ABOUT
-          </button>
-          <button>
-            SKILLS
-          </button>
-          <button>
-            PROJECTS
-          </button> */}
+          <BiHomeAlt/>
+          <FiTool />
+          <AiOutlineProject />
+          <BsFileText />
         </div>
       </nav>
     )

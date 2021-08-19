@@ -33,7 +33,7 @@
   display: none;
   position: fixed;
   background-color: $background-dark;
-  border-radius: 5px 0 0 5px;
+  border-radius: calc(.5vw + 2px) 0 0 calc(.5vw + 2px);
   font-family: $jost;
   font-weight: bold;
   color: $mirage-yellow-light;
@@ -44,6 +44,7 @@
   top: 15vh;
   cursor: pointer;
   width: fit-content;
+  height: fit-content;
   margin: auto;
   z-index: 100000;
   opacity: .7;
@@ -52,6 +53,7 @@
     position: relative;
     display: block;
     font-size: calc(1vw + 5px);
+    margin: auto;
   }
 }
 

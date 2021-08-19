@@ -18,18 +18,18 @@ class App extends React.Component {
       window.addEventListener('scroll', e => {
         if (window.$(window).scrollTop() > window.innerHeight / 2) {
           if (document.getElementById("back-to-top").style.display !== "block") {
-            document.getElementById("back-to-top").style.animation = ".5s appear-opacity"
+            document.getElementById("back-to-top").style.animation = ".25s appear-opacity"
             setTimeout(() => {
               document.getElementById("back-to-top").style.display = "block"
-            }, 500)
+            }, 250)
           }
         } 
         else {
           if (document.getElementById("back-to-top").style.display === "block") {
-          document.getElementById("back-to-top").style.animation = ".5s appear-opacity-reverse"
+          document.getElementById("back-to-top").style.animation = ".25s appear-opacity-reverse"
           setTimeout(() => {
             document.getElementById("back-to-top").style.display = "none"
-          }, 500)
+          }, 250)
           }
         }
       })
