@@ -30,8 +30,8 @@
       margin-left: auto; margin-right: auto;
 
       > svg {
-        width: 3vw;
-        height: 3vw;
+        width: calc(2vw + 15px);
+        height: calc(2vw + 15px);
         margin: 2vw auto;
         color: $background;
         width: 50%;

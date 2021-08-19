@@ -2,7 +2,6 @@ import React from 'react';
 import { BiHomeAlt } from 'react-icons/bi'
 import { FiTool } from 'react-icons/fi'
 import { AiOutlineProject } from 'react-icons/ai'
-import { BsFileText } from 'react-icons/bs'
 
 class NavBar extends React.Component {
   componentDidMount() {
