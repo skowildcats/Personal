@@ -57,13 +57,13 @@
 
         &:hover {
           color: $mirage-light-orange;
-          text-shadow: 3px 3px $mirage-dark-orange, 2.5px 2.5px $mirage-dark-orange, 2px 2px $mirage-dark-orange, 
-          1.5px 1.5px $mirage-dark-orange, 1px 1px $mirage-dark-orange, .5px .5px $mirage-dark-orange;
+          text-shadow: 3px 3px $mirage-yellow, 2.5px 2.5px $mirage-yellow, 2px 2px $mirage-yellow, 
+          1.5px 1.5px $mirage-yellow, 1px 1px $mirage-yellow, .5px .5px $mirage-yellow;
 
           > a::after {
             border-color: $mirage-light-orange;
-            box-shadow: 3px 3px $mirage-dark-orange, 2.5px 2.5px $mirage-dark-orange, 2px 2px $mirage-dark-orange, 
-          1.5px 1.5px $mirage-dark-orange, 1px 1px $mirage-dark-orange, .5px .5px $mirage-dark-orange;
+            box-shadow: 3px 3px $mirage-yellow, 2.5px 2.5px $mirage-yellow, 2px 2px $mirage-yellow, 
+          1.5px 1.5px $mirage-yellow, 1px 1px $mirage-yellow, .5px .5px $mirage-yellow;
           }
         }
       }

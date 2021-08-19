@@ -37,7 +37,7 @@ class AboutMe extends React.Component {
                 <a href="https://github.com/skowildcats" target="_blank">
                   <SiGithub />
                 </a>
-                <a href="https://www.linkedin.com/in/jon-chen67/">
+                <a href="https://www.linkedin.com/in/jon-chen67/" target="_blank">
                   <SiLinkedin />
                 </a>
                 <a href="https://angel.co/u/jonathan-chen-30" target="_blank">
