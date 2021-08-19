@@ -29,13 +29,30 @@
   pointer-events: none;
 }
 
-#header {
-  background-image: linear-gradient($background, transparent);
+#back-to-top {
   position: fixed;
-  height: 10vh;
-  top: 0;
-  width: 100%;
-  z-index: 10000;
+  background-color: $background-dark;
+  border-radius: 5px 0 0 5px;
+  font-family: $jost;
+  font-weight: bold;
+  color: $mirage-yellow-light;
+  padding: calc(.5vw + 1px);
+  width: fit-content;
+  display: block;
+  text-shadow: 1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
+  right: 0;
+  top: 15vh;
+  cursor: pointer;
+  width: fit-content;
+  margin: auto;
+  z-index: 100000;
+  opacity: .7;
+
+  > a {
+    position: relative;
+    display: block;
+    font-size: calc(1vw + 5px);
+  }
 }
 
 @media only screen and (max-width: $transition) {
@@ -46,5 +63,9 @@
 
   #footer {
     display: none;
+  }
+
+  #back-to-top {
+    text-shadow: .02em .02em $mirage-contrast, .04em .04em $mirage-contrast, .06em .06em $mirage-contrast;
   }
 }

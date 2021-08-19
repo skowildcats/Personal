@@ -28,7 +28,9 @@ class App extends React.Component {
         <div id="app">
           <NavBar/>
           <div id="body">
-            {/* <div id="header"></div> */}
+            <div id="back-to-top">
+              <a href="#">Back to top</a>
+            </div>
             <div id="footer"></div>
             <AboutMe />
             <Skills/>
