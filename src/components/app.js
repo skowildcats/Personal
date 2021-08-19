@@ -49,7 +49,6 @@ class App extends React.Component {
             <div id="back-to-top">
               <a href="#">Back to top</a>
             </div>
-            <div id="footer"></div>
             <AboutMe />
             <Skills/>
             <Projects />
