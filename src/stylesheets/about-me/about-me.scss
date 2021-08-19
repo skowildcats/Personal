@@ -87,6 +87,17 @@
     border-radius: 50%;
     object-fit: cover;
   }
+
+  > div {
+    width: fit-content;
+    margin: auto;
+    color: $mirage-yellow;
+
+    > a > svg {
+      padding: 15px;
+      font-size: calc(2vw + 15px);
+    }
+  }
 }
 
 @media only screen and (max-width: $smoothing) {
@@ -95,7 +106,6 @@
     height: inherit;
 
     > div:last-child {
-      padding-top: 5vh;
       width: 100%;
       > div {
         width: 90%;

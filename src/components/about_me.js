@@ -1,4 +1,5 @@
 import React from 'react';
+import { SiLinkedin, SiAngellist, SiGithub} from 'react-icons/si'
 
 class AboutMe extends React.Component {
   componentDidMount() {
@@ -31,12 +32,18 @@ class AboutMe extends React.Component {
           </div>
           <div id="about-me-content"> 
             <div id="picture">
-              {/* <div>
-                <div>
-                  Team Player
-                </div>
-              </div> */}
               <img id="profile-pic" src={process.env.PUBLIC_URL + "/headshot.png"} alt="headshot" />
+              <div>
+                <a href="https://github.com/skowildcats" target="_blank">
+                  <SiGithub />
+                </a>
+                <a href="https://www.linkedin.com/in/jon-chen67/">
+                  <SiLinkedin />
+                </a>
+                <a href="https://angel.co/u/jonathan-chen-30" target="_blank">
+                  <SiAngellist />
+                </a>
+              </div>
             </div>
             <div>
               <div id="text-container">
