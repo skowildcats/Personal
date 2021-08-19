@@ -52,9 +52,6 @@ class App extends React.Component {
             <AboutMe />
             <Skills/>
             <Projects />
-            <div>
-              Contact
-            </div>
           </div>
         </div>
       )
