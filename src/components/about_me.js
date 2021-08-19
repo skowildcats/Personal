@@ -20,7 +20,7 @@ class AboutMe extends React.Component {
         document.getElementById("typerwriter-content").textContent = typeContent[i]
         document.getElementById("typerwriter-content").style.animation = "typing 5s steps(25, end) infinite, blink-caret .85s step-end infinite"
       }, 5000);
-    }, 1400)
+    }, 1000)
   }
 
   render() {

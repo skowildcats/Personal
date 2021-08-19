@@ -20,7 +20,7 @@
     width: 50%;
 
     > div {
-      animation: 1.25s appear ease-in-out;
+      animation: .75s appear ease-in-out;
       color: $mirage-yellow-light;
       font-size: calc(2vw + 3px);
       font-weight: bold;
@@ -76,7 +76,7 @@
   margin: auto;
 
   > img {
-    animation: 1.25s appear ease-in-out;
+    animation: .75s appear ease-in-out;
     position: relative;
     z-index: 100;
     display: block; 
@@ -96,6 +96,7 @@
     > a > svg {
       padding: 15px;
       font-size: calc(2vw + 15px);
+      animation: .75s appear ease-in-out;
     }
   }
 }

@@ -9,7 +9,7 @@
   transform: translate(-50%, -50%);
 
   > div:first-child {
-    box-shadow: inset 0px 0px 0px 3px $mirage-orange;
+    box-shadow: inset 0px 0px 0px 3px $mirage-yellow;
     border-radius: 7px;
     width: 20vw;
     min-width: 250px;
@@ -21,7 +21,7 @@
       height: 100%;
       display: block;
       border-radius: 4px;
-      background-color: $mirage-orange;
+      background-color: $mirage-yellow;
       animation: 2s loading linear;
     }
   }
@@ -31,7 +31,7 @@
     font-family: $jost;
     font-size: 30px;
     margin: 5px;
-    color: $mirage-orange;
+    color: $mirage-yellow;
   }
 }
 

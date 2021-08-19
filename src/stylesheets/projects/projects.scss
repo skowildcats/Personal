@@ -59,6 +59,7 @@
 }
 
 #projects-header {
+  animation: .75s appear ease-in-out;
   font-family: $hk-grotesk;
   font-weight: bold;
   color: $mirage-yellow-light;
