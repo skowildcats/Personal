@@ -27,10 +27,28 @@ class NavBar extends React.Component {
     return (
       <nav id="nav-bar">
         <div id="button-container">
-          <BiHomeAlt/>
-          <FiTool />
-          <AiOutlineProject />
-          <BsFileText />
+          <a href="#">
+            <BiHomeAlt/>
+            <div id="icon-text">
+              Home
+            </div>
+          </a>
+          <a href="#skills">
+            <FiTool />
+            <div id="icon-text">
+              Skills
+            </div>
+          </a>
+          <a href="#projects">
+            <AiOutlineProject />
+            <div id="icon-text">
+              Projects
+            </div>
+          </a>
+          <a id="resume" href={process.env.PUBLIC_URL + "/Jonathan_Chen_Resume.pdf"} target="_blank">
+            <img id="resume-photo" src={process.env.PUBLIC_URL + "/Jonathan_Chen_Resume.png"} alt="resume">
+            </img>
+          </a>
         </div>
       </nav>
     )
