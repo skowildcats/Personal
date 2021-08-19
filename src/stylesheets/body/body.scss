@@ -30,6 +30,7 @@
 }
 
 #back-to-top {
+  display: none;
   position: fixed;
   background-color: $background-dark;
   border-radius: 5px 0 0 5px;
@@ -38,7 +39,6 @@
   color: $mirage-yellow-light;
   padding: calc(.5vw + 1px);
   width: fit-content;
-  display: block;
   text-shadow: 1.5px 1.5px $mirage-contrast, 1px 1px $mirage-contrast, .5px .5px $mirage-contrast;
   right: 0;
   top: 15vh;

@@ -15,6 +15,24 @@ class App extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({loading: false})
+      window.addEventListener('scroll', e => {
+        if (window.$(window).scrollTop() > window.innerHeight / 2) {
+          if (document.getElementById("back-to-top").style.display !== "block") {
+            document.getElementById("back-to-top").style.animation = ".5s appear-opacity"
+            setTimeout(() => {
+              document.getElementById("back-to-top").style.display = "block"
+            }, 500)
+          }
+        } 
+        else {
+          if (document.getElementById("back-to-top").style.display === "block") {
+          document.getElementById("back-to-top").style.animation = ".5s appear-opacity-reverse"
+          setTimeout(() => {
+            document.getElementById("back-to-top").style.display = "none"
+          }, 500)
+          }
+        }
+      })
     }, 2250);
   }
 
