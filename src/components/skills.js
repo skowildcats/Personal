@@ -13,7 +13,7 @@ class Skills extends React.Component {
         <div id="skills-container">
           <div id="skills-text">
             I have experience in a wide variety of frontend and backend languages,  
-            coupled with my experience in consultng has allowed me to leverage my 
+            along with a background in consulting. This has allowed me to leverage my 
             problems solving skills with the technologies necessary to 
             create elegant and user friendly products.
           </div>
